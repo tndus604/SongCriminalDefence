@@ -87,7 +87,7 @@
 									</div>
 									<!-- Home/Practice Areas()/About/FAQ/Contact -->
 									<ul class="main-nav__list">
-										<li class="menu-item current-menu-ancestor">
+										<li class="menu-item">
 											<a href="index.html">Home</a>
 										</li>
 										<li class="menu-item">
@@ -100,7 +100,7 @@
 												<li><a href="sexual-assault.html">Sexual Assualt</a></li>
 												<li><a href="utter-threats.html">Utter Threats</a></li>
 												<li><a href="criminal-harassment.html">Criminal Harassment</a></li>
-												<li><a href="mischeif.html">Mischief</a></li>
+												<li><a href="mischief.html">Mischief</a></li>
 												<li><a href="fraud.html">Fraud</a></li>
 												<li><a href="drug-offences.html">Drug Possession</a></li>
 												<li><a href="drug-trafficking.html">Drug Trafficking</a></li>
@@ -108,32 +108,23 @@
 												<li><a href="young-offenders.html">Young Offenders</a></li>
 											</ul>
 										</li>
-										<li class="menu-item">
+										<li class="menu-item current-menu-ancestor">
 											<a href="about.html">About</a>
 											<ul>
 												<li><a href="elliot-song.html">Elliot Song</a></li>
 											</ul>
 										</li>
-										<li class="menu-item">
+										<!-- <li class="menu-item">
 											<a href="#">FAQs</a>
 										</li>
 										<li class="menu-item">
 											<a href="blog_with_right_sidebar.html">Blog</a>
-										</li>
+										</li> -->
 										<li class="menu-item">
 											<a href="contacts.html">Contact Us</a>
 										</li>
 									</ul>
 								</nav>
-								<!-- <div class="search-block">
-									<button class="search-icon-btn">Search</button>
-									<div class="search-block__dropdown">
-										<form action="#" class="search-block__form">
-											<input class="search-block__input" type="text" name="search_btn" placeholder="Search...">
-											<button class="search-block__btn" type="button">Search</button>
-										</form>
-									</div>
-								</div> -->
 								<div class="contact-phone">
 									<a href="tel:1-647-778-0031" style="text-decoration: none;">647.778.0031</a>
 								</div>
@@ -171,7 +162,7 @@
 							<div class="col-lg-6">
 								<div class="indents-15"></div>
 								<div class="single-team-img">
-									<img src="img/elliot-song.jpg" alt="">
+									<img src="img/elliot-song.jpg" alt="Elliot-Song-Lawyer">
 								</div>
 								<div class="indents-lg-30"></div>
 							</div>
@@ -194,22 +185,17 @@
 								</ul>
 								<ul class="single-team-soclist">
 									<li>
-										<a href="#">
-											<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
+										<a href="https://www.facebook.com/Song-Criminal-Defence-101350695121604">
 											<i class="fa fa-facebook" aria-hidden="true"></i>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="https://www.linkedin.com/company/song-criminal-defence">
 											<i class="fa fa-linkedin" aria-hidden="true"></i>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="https://www.instagram.com/songcriminaldefence/">
 											<i class="fa fa-instagram" aria-hidden="true"></i>
 										</a>
 									</li>
@@ -258,19 +244,19 @@
 													<li class="skill_li skill_li-in">
 														<h6 class="skill-title">Criminal defence</h6>
 														<div class="diagram_bar">
-															<div class="skill_div skill_div-style" data-percent="90%"></div>
+															<div class="skill_div skill_div-style" data-percent="100%"></div>
 														</div>
-														<p class="skill_percent skill_div">90%</p>
+														<p class="skill_percent skill_div">100%</p>
 													</li>
 													<li class="skill_li skill_li-in">
-														<h6 class="skill-title">Dui defence</h6>
+														<h6 class="skill-title">DUI defence</h6>
 														<div class="diagram_bar">
-															<div class="skill_div skill_div-style" data-percent="75%"></div>
+															<div class="skill_div skill_div-style" data-percent="100%"></div>
 														</div>
-														<p class="skill_percent skill_div">75%</p>
+														<p class="skill_percent skill_div">100%</p>
 													</li>
 													<li class="skill_li skill_li-in">
-														<h6 class="skill-title">Personal injury</h6>
+														<h6 class="skill-title">Domestic/Sexual Assault</h6>
 														<div class="diagram_bar">
 															<div class="skill_div skill_div-style" data-percent="95%"></div>
 														</div>
@@ -287,18 +273,35 @@
 						</div>
 						<div class="contact-form-wrapp">
 							<h3 class="content-title--05">Contact Me</h3>
-							<form action="#" class="contact-form">
+							<form action="" class="contact-form" id="ajax-contact-form">
 								<label class="contact-form__wrapp-text">
-									<input type="text" class="contact-form__text" placeholder="Your Name">
+									<input type="text" class="contact-form__text" name="name" value="" placeholder="Your Name">
 								</label>
 								<label class="contact-form__wrapp-email">
-									<input type="email" class="contact-form__email" placeholder="Your Email">
+									<input type="email" class="contact-form__email" name="email" value="" placeholder="Your Email">
 								</label>
-								<textarea class="contact-form__textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
-								<button class="contact-form__btn" type="button">Send Message</button>
+								<textarea class="contact-form__textarea" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+								<button class="contact-form__btn" type="submit" value="Send Message">Send Message</button>
 							</form>
 							<div class="indents-80"></div>
 						</div>
+
+						<!-- <div class="contact_form">
+							<div id="note"></div>
+							<div id="fields">
+								<form id="ajax-contact-form" action="contact_form/contact_process.php">
+									<div class="row">
+										<div class="col-md-6"><input type="text" name="name" value="" placeholder="Your Name *" /></div>
+										<div class="col-md-6"><input type="text" name="email" value="" placeholder="Your Email *" /></div>
+										<div class="col-md-12">
+											<textarea name="message" placeholder="Message *"></textarea>
+											<input type="submit" value="Send Message">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div> -->
+
 					</div>
 				</div>
 			</div>

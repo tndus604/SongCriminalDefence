@@ -444,6 +444,26 @@ ul li::before {
 /*============================================
 //  Header style:
 */
+
+/* slider */
+
+#slide-home11-title, #slide-home12-title, #slide-home13-title {
+	z-index: 15; 
+	font-family:Prata; 
+	white-space: nowrap; 
+	font-size: 72px; 
+	line-height: 92px; 
+	font-weight: 400; 
+	color: rgba(255, 255, 255, 1.00);
+}
+
+@media only screen and (max-width: 480px) {
+	#slide-home11-title, #slide-home12-title, #slide-home13-title {
+		font-size: 45px;
+		line-height: 62px;
+	}
+}
+
 .wrapp-header {
 	position: absolute;
 	top: 0;
